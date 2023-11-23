@@ -17,3 +17,11 @@ const slides = [
     tagLine: "Autocollants <span>avec découpe laser sur mesure</span>",
   },
 ];
+
+// Variables et constantes
+const dots = document.querySelectorAll(".dots");
+const arrowRight = document.querySelector(".container-banner .arrow_right");
+const arrowLeft = document.querySelector("#banner .arrow_left");
+const img = document.querySelector("#banner img");
+const titreImage = document.querySelector("# p");
+let index = 0;
