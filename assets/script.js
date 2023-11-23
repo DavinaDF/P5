@@ -25,3 +25,33 @@ const arrowLeft = document.querySelector("#banner .arrow_left");
 const img = document.querySelector("#banner img");
 const titreImage = document.querySelector("# p");
 let index = 0;
+
+// Fonction au clic sur flèche droite
+function clickArrowRight() {
+  if (index < 3) {
+    allDots[index].classList.remove("dot_selected");
+    index++;
+  } else if (index == 3) {
+    allDots[index].classList.remove("dot_selected");
+    index = 0;
+  }
+  img.src = slides[index].image;
+  titreImage.innerHTML = slides[index].tagLine;
+  allDots[index].classList.add("dot_selected");
+}
+
+// Fonction au clic sur flèche gauche
+function clickArrowLeft() {
+  console.log(index);
+  if (index > 0) {
+    allDots[index].classList.remove("dot_selected");
+    index--;
+  } else if (index == 0) {
+    allDots[index].classList.remove("dot_selected");
+    index = 3;
+  }
+  console.log(index);
+  img.src = slides[index].image;
+  titreImage.innerHTML = slides[index].tagLine;
+  allDots[index].classList.add("dot_selected");
+}
