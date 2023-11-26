@@ -71,8 +71,8 @@ function clickArrowLeft() {
   allDots[index].classList.add("dot_selected");
 }
 
-arrowRight.onclick = clickArrowRight;
-arrowLeft.onclick = clickArrowLeft;
+// arrowRight.onclick = clickArrowRight;
+// arrowLeft.onclick = clickArrowLeft;
 
-// arrowRight.addEventListener("click", clickArrowRight);
-// arrowLeft.addEventListener("click", clickArrowLeft);
+arrowRight.addEventListener("click", clickArrowRight);
+arrowLeft.addEventListener("click", clickArrowLeft);
