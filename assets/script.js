@@ -39,6 +39,7 @@ function bulletPoints() {
     }
   }
 }
+// Appel fonction création et affichage bulletpoints
 bulletPoints();
 
 // Récupération tableau bulletpoints
@@ -75,5 +76,6 @@ function clickArrowLeft() {
 // arrowRight.onclick = clickArrowRight;
 // arrowLeft.onclick = clickArrowLeft;
 
+// Appel fonctions clic sur flèches
 arrowRight.addEventListener("click", clickArrowRight);
 arrowLeft.addEventListener("click", clickArrowLeft);
