@@ -41,6 +41,7 @@ function bulletPoints() {
 }
 bulletPoints();
 
+// Récupération tableau bulletpoints
 const allDots = document.querySelectorAll(".dots .dot");
 
 // Fonction au clic sur flèche droite
