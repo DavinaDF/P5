@@ -23,9 +23,9 @@ const slides = [
 const dots = document.querySelector(".dots");
 const arrowRight = document.querySelector(".container-banner .arrow_right");
 const arrowLeft = document.querySelector(".container-banner .arrow_left");
+let index = 0;
 const img = document.querySelector(".container-banner img");
 const titreImage = document.querySelector(".container-banner p");
-let index = 0;
 
 // Fonction création et affichage des points
 function bulletPoints() {
