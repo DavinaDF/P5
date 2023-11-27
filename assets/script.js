@@ -40,37 +40,37 @@ function bulletPoints() {
   }
 }
 // Appel fonction création et affichage bulletpoints
-bulletPoints();
+bullets();
 
 // Récupération tableau bulletpoints
-const allDots = document.querySelectorAll(".dots .dot");
+const bulletPoints = document.querySelectorAll(".dots .dot");
 
 // Fonction au clic sur flèche droite
 function clickArrowRight() {
   if (index < 3) {
-    allDots[index].classList.remove("dot_selected");
+    bullets[index].classList.remove("dot_selected");
     index++;
   } else if (index == 3) {
-    allDots[index].classList.remove("dot_selected");
+    bullets[index].classList.remove("dot_selected");
     index = 0;
   }
   img.src = slides[index].image;
   titreImage.innerHTML = slides[index].tagLine;
-  allDots[index].classList.add("dot_selected");
+  bullets[index].classList.add("dot_selected");
 }
 
 // Fonction au clic sur flèche gauche
 function clickArrowLeft() {
   if (index > 0) {
-    allDots[index].classList.remove("dot_selected");
+    bullets[index].classList.remove("dot_selected");
     index--;
   } else if (index == 0) {
-    allDots[index].classList.remove("dot_selected");
+    bullets[index].classList.remove("dot_selected");
     index = 3;
   }
   img.src = slides[index].image;
   titreImage.innerHTML = slides[index].tagLine;
-  allDots[index].classList.add("dot_selected");
+  bullets[index].classList.add("dot_selected");
 }
 
 // arrowRight.onclick = clickArrowRight;
