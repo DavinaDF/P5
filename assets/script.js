@@ -47,10 +47,10 @@ const bullets = document.querySelectorAll(".dots .dot");
 
 // Fonction au clic sur flèche droite
 function clickArrowRight() {
-  if (index < 3) {
+  if (index < slides.length - 1) {
     bullets[index].classList.remove("dot_selected");
     index++;
-  } else if (index == 3) {
+  } else if (index == slides.length - 1) {
     bullets[index].classList.remove("dot_selected");
     index = 0;
   }
@@ -66,7 +66,7 @@ function clickArrowLeft() {
     index--;
   } else if (index == 0) {
     bullets[index].classList.remove("dot_selected");
-    index = 3;
+    index = slides.length - 1;
   }
   img.src = slides[index].image;
   titreImage.innerHTML = slides[index].tagLine;
