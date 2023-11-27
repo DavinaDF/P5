@@ -40,10 +40,10 @@ function bulletPoints() {
   }
 }
 // Appel fonction création et affichage bulletpoints
-bullets();
+bulletPoints();
 
 // Récupération tableau bulletpoints
-const bulletPoints = document.querySelectorAll(".dots .dot");
+const bullets = document.querySelectorAll(".dots .dot");
 
 // Fonction au clic sur flèche droite
 function clickArrowRight() {
